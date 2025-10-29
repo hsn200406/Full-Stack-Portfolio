@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Manufacturing Engineering Projects</title>
+        <link rel="stylesheet" href="Styles\reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+        <!--My cutsom css-->
+        <link rel="stylesheet" href="Styles\style.css">
+    </head>
+
+    <body class="text-bg-dark p-3">
+        <header class="title-section">
+            <div>
+                <header class="border rounded p-4 text-center bg-daek">
+                <h1 class="display-4 ">Welcome to My Portfolio!</h1>
+                </header>
+                <nav class="navbar navbar-expand">
+                    <div class="container-fluid" style="background-color: #43472387;">
+                        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="main.html">Home</a>
+                            </li>
+                            <!-- Dropdown for Projects -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="main.html#Projects" id="projectsMenu">Projects</a>
+                                <ul class="dropdown-menu" aria-labelledby="projectsMenu">
+                                <li><a class="dropdown-item active" aria-current="page" href="Soft_Projects.html">Software Projects</a></li>
+                                <li><a class="dropdown-item" href="Manu_Projects.html">Manufacturing Engineering Projects</a></li>
+                                <!-- <li><a class="dropdown-item" href="#others">Other Projects</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <section id="software-projects" class="mt-5">
+                <br>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <h1>Summary</h1>
+                        <div class="col-md-8 mt-4">
+                            <div class="border rounded p-4 text-center custom-section-text">
+                                <p>
+                                    Below, I will be showing the projects that I have completed during my design courses at UBC as part of my Manufacturing Engineering undergraduate degree.
+                                </p>
+                                <ul class="d-inline-block mx-auto text-start">
+                                    <li>Project 1: Thunderdrive RC</li>
+                                    <!-- <li>Project 2 - Bulletproof S.H.I.E.L.D</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RC Car subsection -->
+                <div class="row mt-4">
+                    <!-- Text + bullet points column -->
+                    <div class="col mt-4">
+                        <h1 id="RC Car Title"><strong>Thunderdrive RC Car</strong><br><br></h3>
+                        <div class="Sailbot">
+                            <h2 id="what_RC_Section"><strong>What?</strong><br></h3>
+                                <div class="text-start">
+                                    <p>
+                                        This is an 8-month project design course completed during my 3rd year as an Undergraduate Manufacturing Engineering Student at the University of British Columbia. As shown by the title of the project, it was an RC Car project and I was one of 5 team members who worked on the project.
+                                    </p>
+                                    <p>
+                                        I played a huge role during the project implementation and planning by utilizing transferable skills and knowledge from other courses and being resourceful by conducting external research to introduce data-driven insights, refine design strategies, and optimize the project's overall performance and outcomes.
+                                    </p>
+                                    <p>
+                                        The objective of this project was to design components and manufacturing processes for a production run of ~20 000 per year for an existing RC car. The components that we mainly focused on were: the wheels, body, and chassis extender/retractor of the car. The overall goals are to keep <strong>manufacturability, durability, serviceability, and performance high</strong> while keeping <strong>costs low</strong> and producing an <strong>aesthetically appealing car</strong>
+                                    </p>
+                                </div>
+                            <br>
+                            <img src="Images\MANU RC Car.png" class="rounded mx-auto d-block RC-img" alt="RC car photo">
+                            <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                Final RC Car Product
+                            </figcaption>
+                            <br>
+                            <div class="sub_project_1_RC_Car mt-5">
+                                <h2 id="sub_project_1_RC_Car_title"><strong>Sub Project 1 - Wheel Design</strong><br></h3>
+                                <div class="mt-3 text-start">
+                                    <p>
+                                        The first sub-project that I participated in was the wheel re-designing phase where I was responsible for the <b>material selection, cost estimate, and external research phases.</b>
+                                    </p>
+                                    <p>
+                                        During the <b>material selection</b> phase, the goal was to optimize performance and durability and minimize cost. Due to their weak mechanical properties, plastics were immediately eliminated as metals were the better choice. After narrowing down the metals, Aluminum 6061-T6 was chosen as it aligns with the Design for Manufacturing (DFM) principles, achieves low cost, and its high corrosion resistance that maximizes its reliability especially when encountering off-road terrains with water.
+                                    </p>
+                                    <p>
+                                        During <b>cost analysis</b>, the price of machines and tools such as CNC machines and their end mill tools were also considered to identify the cost required to manufacture the wheel.
+                                    </p>
+                                    <p>
+                                        During the External research phase, the wheel design and the machines required to manufacture it were analyzed to convert the design into a tangible product.
+                                    </p>
+                                    <p>
+                                        After conducting the external research analysis, I observed that the <b>2-spoke design</b> was the most optimal choice due to its high aerodynamic capabilities which leads to reduced overall drag and its proven success in many competitions such as the Olympics and Paralympics.
+                                    </p>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="row">
+                            <div class="col-6 col-md-4 mb-3">
+                                <figure class="text-center">
+                                    <img src="Images/Manufacturing Images/3D-printed wheel used for early testing purposes_.png" 
+                                        class="rounded mx-auto d-block RC-Sub1-img"
+                                        alt="3D-printed wheel used for early testing purposes">
+                                    <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                        3D-printed wheel used for early testing purposes
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <figure class="text-center">
+                                    <img src="Images/Manufacturing Images/Final Wheel design with lubrication.gif" 
+                                        class="rounded mx-auto d-block RC-Sub1-img" 
+                                        alt="Final Wheel design with lubrication">
+                                    <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                        Final wheel design with lubrication
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-6 col-md-4 mb-3">
+                                <figure class="text-center">
+                                    <img src="Images/Manufacturing Images/Front (Left) model of the 2-spoke.png" 
+                                        class="rounded mx-auto d-block RC-Sub1-img" 
+                                        alt="Front (Left) model of the 2-spoke">
+                                    <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                        Front (Left) model of the 2-spoke
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                            <!-- Sub Project 2 - Shell Design -->
+                            <div class="sub_project_2_RC_Car mt-5">
+                                <h2 id="sub_project_2_RC_Car_title"><strong>Sub Project 2 - Shell Design</strong></h2>
+                                <div class="mt-3 text-start">
+                                    <p>
+                                        During the 2nd sub-project, I focused on the shell design, material selection, and external research.
+                                    </p>
+                                    <p>
+                                        The 4 main things that came in mind when designing such a component, are its effect on the speed of the car as well, as its durability, aesthetics, durability, and handling. After all our peers completed their sketching designs of the shell, we chose the designs based on an overall agreement within the team. As a result, my idea of creating an oval-shaped top was chosen due to its advantages for building our car. I created that design as it improved the <strong>aerodynamics, structural strength, and aesthetics of the car.</strong> The rounded shape minimizes the air resistance flowing over the car’s surface, which improves the speed of the RC car and maintains its stability at high speeds. The rounded shell also distributes forces more evenly upon impact, which reduces the risks of deformation or even cracks in the shell. Its look is also physically appealing, giving it a buggy-style look, which is always great when selling to customers and increasing sales.
+                                    </p>
+                                    <!-- Row with two images side by side -->
+                                    <div class="row mt-3">
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images/Manufacturing Images/Final shell design printed mould_.jpeg" 
+                                                    class="rounded mx-auto d-block rc-side-shell-design-printed-img"
+                                                    alt="Final shell design printed mould">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Final shell design printed mould
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images/Manufacturing Images/Final shell design mold CAD model_.png" 
+                                                    class="rounded mx-auto d-block rc-side-shell-design-cad-img"
+                                                    alt="Final shell design mold CAD model">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Final shell design CAD model
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <p>
+                                        I conducted an <strong>external research</strong> analysis to select the best material for the shell. Three materials were considered: Polystyrene, ABS, and PETG. Polystyrene was initially screened out due to its weak structure. Although it is lightweight, which is great for speed performance, it lacks structural integrity as it is too brittle and cannot be used in high-impact activities. ABS and PETG were further analyzed, and PETG was chosen due to its <strong>higher durability, overall strength, and tensile strength</strong> as well as its transparency allowing for customization.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images/Manufacturing Images/Thermoforming.png" 
+                                                    class="rounded mx-auto d-block rc-side-thermo-process-img"
+                                                    alt="Thermoforming process of shell mould">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Thermoforming process of shell mould
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images/Manufacturing Images/Final PETG thermoformed shell after manually cutting and sanding excess material_.png" 
+                                                    class="rounded mx-auto d-block rc-side-img"
+                                                    alt="Final PETG thermoformed shell">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Final PETG thermoformed shell
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <h3 class="mb-3"> Check out the links below:</h3>
+                                    <!-- First dropdown -->
+                                    <p>
+                                        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#ashbyChart" role="button" aria-expanded="false" aria-controls="ashbyChart">
+                                            Ashby Charts for the Shell
+                                        </a>
+                                    </p>
+
+                                    <div class="collapse" id="ashbyChart">
+                                        <div class="text-center mt-2">
+                                            <img src="Images/Manufacturing Images/Ashby charts for shell.png" 
+                                                class="rounded mx-auto d-block RC-dropdown-img"
+                                                alt="Ashby Charts for the shell">
+                                            <p class="mt-1" style="font-size: 0.9rem;">Ashby Charts for the shell</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Second dropdown -->
+                                    <p>
+                                        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#shellInstalled" role="button" aria-expanded="false" aria-controls="shellInstalled">
+                                            Thermoformed Shell Installed on Chassis
+                                        </a>
+                                    </p>
+
+                                    <div class="collapse" id="shellInstalled">
+                                        <div class="mt-2" style="text-align: left;">
+                                        <img src="Images/Manufacturing Images/Shell installed.png"
+                                            class="rounded"
+                                            alt="Thermoformed shell installed on chassis"
+                                            style="display: inline-block; max-height: 500px;">
+                                            <p class="mt-1" style="font-size: 0.9rem;">Thermoformed shell installed on chassis</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Sub Project 3 - Chassis Design -->
+                            <div class="sub_project_3_RC_Car mt-5">
+                                <h2 id="sub_project_3_RC_Car_title"><strong>Sub Project 3 - Chassis Design</strong></h2>
+                                <div class="mt-3 text-start">
+                                    <p>
+                                        During the 3rd sub-project, I was responsible for completing some tasks for the chassis. The current chassis component made out of ABS material is to be replaced with composite insert material. Based on stakeholder feedback, the original chassis is to be cut, and an insert is to replace the cut-out part. However, the design of such a cut-out or the material used for the insert is up to us to determine in this project. I worked on the <strong>material selection criteria,</strong> performing the <strong>thermoforming process</strong> along with my peers, and conducting an <strong>external research analysis.</strong>
+                                    </p>
+                                    <p>
+                                        In the <strong>material selection phase</strong>, I chose 3 main attributes: <strong>high stiffness</strong> to provide structural integrity and minimize bending, <strong>low weight</strong> to enhance speed performance, <strong>high strength</strong> to provide durability and longevity, and <strong>low cost</strong> to reduce manufacturing expenses which makes it more affordable for purchasing. Two composite materials were considered: Carbon Fibre and Glass Fibre. I first decided to analyze the cost of both materials. I used the equation <strong>C = Cm * m</strong> with the objective of minimizing mass to calculate the cost of each material using the dimensions of the chassis. <em>Note: This technique of analyzing the cost of the materials was taught in another class, but I took the initiative of introducing it to this project.</em>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.notion.so/Calculations-for-cost-analysis-for-Chassis-17c33e80a4db80e7b476ced9e45cb6e7" target="_blank">Calculations for cost analysis for Chassis</a>
+                                    </p>
+                                    <p>
+                                        After completing the cost analysis, I noticed that glass fiber is almost 2 times cheaper than carbon fiber. However, I also noticed that the mass of glass fiber was greater than that of carbon fiber. Because each of the materials satisfied one of the key desired attributes (low weight and low cost), I decided to compare the rest of the attributes. I compared the stiffness and strength properties of both composites relative to their cost using the <strong>Ashby Chart</strong>.
+                                    </p>
+                                    <p>
+                                        As a result, I decided to select Carbon Fiber for manufacturing the chassis due to its superior performance in key project objectives. Despite being more expensive than glass fiber, it offers significantly higher stiffness (<strong>Young’s modulus</strong>) and strength (<strong>yield strength</strong>) as shown in the Ashby chart. I noticed that these attributes ensure the chassis can withstand greater loads, maintain structural integrity, and resist deformation. Additionally, carbon fiber’s lower density compared to glass fiber enables better speed performance. Therefore, carbon fiber was the obvious better choice due to its combination of high strength, stiffness, and low mass.
+                                    </p>
+                                    <p>
+                                        In the external research phase, I prioritized a couple of factors: manufacturability, environmental impact, and cost.
+                                    </p>
+                                    <p>
+                                        Just as my calculations had obtained, research also shows that glass fibre is much cheaper than carbon fiber. I did more research to support the final choice of carbon fiber. <strong>Glass fiber</strong> allows for a flexible choice of molding processes based on the <strong>shape, purpose, and quantity of the property,</strong> offering a better <strong>overall integrity and excellent manufacturability</strong>, however carbon fiber requires precision and specialized techniques making it <strong>less manufacturable than glass fiber.</strong> Longevity is also a very crucial factor when it comes to purchasing a car, and according to the majority of sources, both are corrosion resistant, however carbon fiber was proven to have a higher corrosion resistance and making it a better for purchasing for long term use. Speed is very important for our car, and therefore, I noticed that carbon fiber has 15% less weight than glass fiber, which means that CFRP could contribute to the high speed performance for our RC car. Based on many sources, glass fiber is mostly used in applications that require electrical insulation, which is very unnecessary in our case.
+                                    </p>
+                                    <p>
+                                        <strong>Carbon fiber</strong> is more commonly used in the racing industry; for instance in bicycles it is usually used for bicycle frames and in chassis in Formula 1 cars as well due to <strong>their high strength–weight ratio, high modulus-to-weight ratio, high aesthetic, and quick maneuvering</strong> due to its low weight. Glass fiber is used also in the automotive industry, but it is more commonly used as a front bumper due to its high strength and flexibility. However, we also know that CFRP is stronger than GFRP, and our objective is to have higher stiffness rather than high flexibility. Therefore, it was clear to me that CFRP is the better material to be used for our chassis.
+                                    </p>
+                                    <p>
+                                        After analyzing multiple processes available to us at the laboratory, we chose the wet layup process combined with vacuum bagging the part to allow the composite material to shape the exact form of the male mould. The following showcases the vacuumed part after selecting six layers of composite wet layup materials and vacuuming.
+                                    </p>
+
+                                    <!-- Image: Wet-layup vacuumed part -->
+                                    <div class="row mt-3">
+                                        <div class="col-12 text-center">
+                                            <figure>
+                                                <img src="Images\Manufacturing Images\Wet Layup.png"
+                                                    class="rounded mx-auto d-block"
+                                                    alt="Wet-layup composite during vacuuming"
+                                                    style="max-height: 500px;">>
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Wet-layup composite during the vacuuming process
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3">
+                                        After demolding the carbon fiber part, we proceeded to cut and sand it. However, note that due to its concave shape, it did not fit the original chassis. Therefore, excess material was cut from the composite to remove the excess material and fit it on the original.
+                                    </p>
+                                    <br>
+                                    <!-- Image: After demolding and cutting -->
+                                    <div class="row mt-3">
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images\Manufacturing Images\wet-layup composite after de-moulding and cutting excess materials_.png"
+                                                    class="rounded mx-auto d-block rc-side-img" style="width: 100%; height: auto;"
+                                                    alt="Wet-layup composite after demolding">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Wet-layup composite after demolding
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <figure class="text-center">
+                                                <img src="Images\Manufacturing Images\wet-layup composite after attachment by screws to the chassis and cutting excess materials_ (1).png"
+                                                    class="rounded mx-auto d-block rc-side-img" style="width: 100%; height: auto;"
+                                                    alt="Wet-layup composite attached to chassis">
+                                                <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                                    Wet-layup composite attached to the chassis
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </header>
+        <footer class="site-footer text-center text-white">
+                <div class="container py-4">
+                    <p>&copy; 2025 Hassan ElGhayaty. All rights reserved.</p>
+                    <p>
+                        <a href="main.html" class="text-white">Home</a> |
+                        <a href="About.html" class="text-white">About</a> |
+                        <a href="Contact.html" class="text-white">Contact</a>
+                    </p>
+                </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

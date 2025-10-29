@@ -1,0 +1,347 @@
+.title-section {
+    text-align: center;
+    justify-content: center;
+}
+
+header.border.rounded {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .container-fluid {
+    padding-top: 20px;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+/* Show dropdown on hover instead of click */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-item:hover {
+    background-color: #4e54c8;
+    color: white;
+}
+
+/* ---------- Intro Section ---------- */
+
+.custom-Intro-container {
+    padding-top: 50px;
+}
+
+.custom-intro-row {
+    display: flex;
+    align-items: stretch;
+}
+
+.custom-intro-row > .col-sm-8,
+.custom-intro-row > .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-intro-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+.intro-img {
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.custom-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-link:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.border.rounded {
+    padding: 20px;
+}
+
+.custom-Intro-container h1 {
+    margin-bottom: 2rem;
+}
+
+.custom-Projects-container {
+    padding-top: 80px;
+}
+
+.custom-Projects-container h1 {
+    margin-bottom: 2rem;
+}
+
+.custom-link h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.custom-link p {
+    margin: 0;
+}
+
+.custom-link .carousel-inner img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#software-projects {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Software_Header {
+    text-align: center;
+}
+
+#sailbot-title {
+    text-align: center;
+}
+
+.Sailbot {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.key-contributions ul {
+    margin-top: 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+    text-align: left;
+}
+
+.key-contributions li {
+    margin-top: 10px;
+}
+
+.key-contributions li p.text-center {
+    margin-top: 0.3em;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+.sailbot-img {
+    max-height: 300px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.skills-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #ddddddb9;
+    border-radius: 10px;
+    padding: 10px 0;
+    background: #14111156;
+}
+
+.skills-track {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+
+.skill-logo {
+    height: 60px;
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.small-height {
+    height: 500px;
+}
+
+.After_Sailbot_Intro ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1.5em;
+    margin-left: 0;
+}
+
+.After_Sailbot_Intro ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1.5em;
+    margin-left: 0;
+}
+
+.After_Sailbot_Intro h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.After_Sailbot_Intro p {
+    text-align: left; /* paragraph aligned with bullets */
+    margin-bottom: 1rem;
+}
+
+.After_Sailbot_Intro ul {
+    list-style-type: disc;
+    list-style-position: inside; /* bullets aligned with text */
+    padding-left: 1.5rem;
+}
+
+.After_Sailbot_Intro img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Bullet points nicely aligned with text */
+.aligned-bullets {
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside; /* bullets inside the text block */
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-paragraph {
+    max-width: 700px; /* max width in pixels */
+    margin: 0 auto;   /* center horizontally */
+    text-align: center;
+}
+
+
+/* Cellular Simulation Styling */
+.Cellular {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.Cellular ul {
+    margin-top: 20px;
+    list-style-type: disc;
+    list-style-position: outside;
+    text-align: left;
+}
+
+.cellular-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cellular-subheading code {
+    display: block;
+    text-align: left;
+}
+
+.cellular-details pre {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+code.java {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    white-space: pre;
+    overflow-x: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Manufacturing Specific Styling */
+.RC-img {
+    max-height: 500px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.RC-Sub1-img {
+    max-height: 140px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.RC-dropdown-img {
+    max-height: 300px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.rc-side-img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.rc-side-thermo-process-img {
+    max-height: 300px;
+    max-width: 500px;
+}
+
+.rc-side-shell-design-printed-img {
+    max-height: 270px;
+    max-width: 350px;
+}
+
+.rc-side-shell-design-cad-img {
+    max-height: 270px;
+    max-width: 350px;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Projects</title>
+        <link rel="stylesheet" href="Styles\reset.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+        <!--My cutsom css-->
+        <link rel="stylesheet" href="Styles\style.css">
+    </head>
+
+    <body class="text-bg-dark p-3">
+                <br>
+        <div class="container-fluid p-0">
+            <header class="header-bg d-flex align-items-center justify-content-center">
+                <h1 class="text-white fw-bold">Software Projects</h1>
+            </header>
+        </div>
+        <nav class="navbar navbar-expand">
+                    <div class="container-fluid" style="background-color: #43472387;">
+                        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="main.html">Home</a>
+                            </li>
+                            <!-- Dropdown for Projects -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="main.html#Projects" id="projectsMenu">Projects</a>
+                                <ul class="dropdown-menu" aria-labelledby="projectsMenu">
+                                <li><a class="dropdown-item active" aria-current="page" href="Soft_Projects.html">Software Projects</a></li>
+                                <li><a class="dropdown-item" href="Manu_Projects.html">Manufacturing Engineering Projects</a></li>
+                                <!-- <li><a class="dropdown-item" href="#others">Other Projects</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        <section id="software-projects" class="mt-5">
+                <br>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <h1>Summary</h1>
+                        <div class="col-md-8 mt-4">
+                            <div class="border rounded p-4 text-center custom-section-text">
+                                <p>
+                                    Welcome to my software page! Stick around to check out the following projects that I have completed in software development:
+                                </p>
+                                <ul class="d-inline-block mx-auto text-start">
+                                    <li>Project 1 - Autonomous Sailboats:
+                                        <a href="#sailbot-title"><strong>UBC Sailbot</strong></a>
+                                    </li>
+                                    <li>Project 2 - Cellular Simulation:
+                                        <a href="#cell-simulation-title"><strong>UBC Bootcamp</strong></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- UBC Sailbot subsection -->
+                <div class="row mt-4">
+                    <!-- Text + bullet points column -->
+                    <div class="col mt-4">
+                        <div class="Sailbot">
+                            <h1 id="sailbot-title"><strong>UBC Sailbot</strong><br></h3>
+                            <p class="text-start">
+                                At <strong>UBC Sailbot</strong>, we are developing an autonomous sailboat called <strong>Polaris</strong>. The goal is to design a boat capable of navigating waterways without human intervention. Sailbot has been building autonomous sailboats for several years. Another key objective is to collect various types of ocean data, including environmental measurements such as wind speed, temperature, and GPS location, which can support scientific research. I am part of the <strong>Network Systems Team</strong>, responsible for developing the boat’s <strong>remote transceiver</strong>, which serves as the interface between the main computer onboard and the land-based server.
+                            </p>
+                            <br>
+                            <img src="Images\Software Images\sailbotphoto2025.png" class="rounded mx-auto d-block sailbot-img" alt="UBC Sailbot Photo">
+                            <figcaption style="font-size: 0.9rem; margin-top: 4px;">
+                                UBC Sailbot Team Photo
+                            </figcaption>
+                            <div class="mt-5 key-contributions">
+                                <h2 class="mb-3">Key contributions:</h2>
+                                <div class="key-contributions-list">
+                                    <div class="mb-4 p-3 border rounded">
+                                        <p class="text-center"><strong>Skills/Tools:</strong> C++, Satellite Communication</p>
+                                        Developed the remote transceiver for UBC Sailbot's autonomous sailboat, enabling reliable communication between the boat’s main computer and a remote server via the Iridium satellite network.
+                                    </div>
+                                    <div class="mb-4 p-3 border rounded">
+                                        <p class="text-center"><strong>Skills/Tools:</strong> JSON, Google Protobuf</p>
+                                        Parsed and processed global path JSON data from the Global Pathfinding team and serialized it using Google Protobuf to ensure data integrity.
+                                    </div>
+                                    <div class="mb-4 p-3 border rounded">
+                                        <p class="text-center"><strong>Skills/Tools:</strong> MongoDB, Database Design</p>
+                                        Implemented storage of global path waypoints and timestamps in MongoDB for persistent and efficient data retrieval.
+                                    </div>
+                                    <div class="mb-4 p-3 border rounded">
+                                        <p class="text-center"><strong>Skills/Tools:</strong> libcurl, HTTP Protocol</p>
+                                        Designed robust HTTP communication using libcurl to transmit serialized data and handle server responses with error verification.
+                                    </div>
+                                    <div class="mb-4 p-3 border rounded">
+                                        <p class="text-center"><strong>Skills/Tools:</strong> Google Test Framework, C++, Multithreading</p>
+                                        Debugged and tested Iridium responses by automating multithreaded POST requests to improve system reliability.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-5">
+                            <h2 class="mb-3 text-center">Summary of Skills</h2>
+                                <div class="skills-marquee">
+                                    <div class="skills-track">
+                                    <img src="Images\Software Images\Skills Logos\05974a4d1da1deac6470d2e87aa8c101.jpg" alt="C++" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\01159bc9b0bc4ba22f834d06d4974230.jpg" alt="Python" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\218018c241b854a79dc024a042103433.jpg" alt="MongoDB" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\509d08cc38dea759112858bc6d85a936.jpg" alt="Docker" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\8b8cfc5c57dfd820ed3d4e0728fb9295.jpg" alt="React" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\0f4d07df729bc0debe21f7980f5576c3.jpg" alt="HTML" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7ea67df8f3ea706fdc9b493725fa0835.jpg" alt="CSS" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\a26fadd01c4a7cc59dc4f9b6cd08cc90.jpg" alt="Git" class="skill-logo">
+                                    <!-- repeat logos for smooth looping -->
+                                    <img src="Images\Software Images\Skills Logos\05974a4d1da1deac6470d2e87aa8c101.jpg" alt="C++" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\01159bc9b0bc4ba22f834d06d4974230.jpg" alt="Python" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\218018c241b854a79dc024a042103433.jpg" alt="MongoDB" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\509d08cc38dea759112858bc6d85a936.jpg" alt="Docker" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\8b8cfc5c57dfd820ed3d4e0728fb9295.jpg" alt="React" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\0f4d07df729bc0debe21f7980f5576c3.jpg" alt="HTML" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7ea67df8f3ea706fdc9b493725fa0835.jpg" alt="CSS" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\a26fadd01c4a7cc59dc4f9b6cd08cc90.jpg" alt="Git" class="skill-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container py-5 px-5 text-center">
+                        <div class="container py-5 px-5">
+                            <!-- Autonomous Navigation -->
+                            <div class="row mb-5">
+                                <div class="col-12 After_Sailbot_Intro">
+                                    <h3 class="section-title text-center"><u>Autonomous Navigation</u></h3>
+                                    <p class="main-paragraph text text-center">
+                                        In order for the boat to travel through the ocean, it is essential that it contains algorithms that provide the best possible paths for the boat to go through based on real-time data and pre-defined objectives. These algorithms are based on multiple factors such as wind direction, current, obstacles, and waypoints, ensuring that the boat can navigate efficiently and autonomously. This is the objective of the Global Pathfinding team, to continuously update and send waypoint data to the network systems team, enabling real-time adjustments and ensuring the boat stays on course by transmitting information about its position and planned route to the remote server.
+                                    </p>
+                                    <br>
+                                    <img src="Images/Software Images/Sailbot Workflow.png" class="rounded mx-auto d-block img-fluid mt-3" alt="Sailbot Workflow Photo">
+                                    <figcaption class="text-center small-caption">
+                                        Software Development Workflow
+                                    </figcaption>
+                                </div>
+                            </div>
+
+                            <!-- My Role -->
+                            <div class="row mb-5">
+                                <div class="col-12 After_Sailbot_Intro">
+                                    <h3 class="section-title text-center"><u>My Role</u></h3>
+                                    
+                                    <!-- Text and bullets container -->
+                                    <div class="role-container mx-auto" style="max-width: 700px;">
+                                        <p class="main-paragraph text-center">
+                                            As being responsible for the development for the remote transceiver, I was mainly focused on achieving the following objectives:
+                                        </p>
+                                        <ul class="aligned-bullets">
+                                            <li>Enabling <strong>data transmission</strong> between the boat’s main computer and the remote server via the <strong>Iridium satellite network</strong></li>
+                                            <li><strong>Verifying</strong> HTTP API calls with ROCKBLOCK servers to transmit global path data and process server responses</li>
+                                            <li>Storing the global path waypoints received from the Global Pathfinding team in the <strong>MongoDB database</strong></li>
+                                            <li>Verifying accurate storage of <strong>global path waypoints</strong> in the <strong>MongoDB database</strong></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Image and caption -->
+                                    <img src="Images/Software Images/Remote Transeiver Workflow.png" class="rounded mx-auto d-block img-fluid mt-5 small-height" alt="Remote Transceiver Workflow">
+                                    <figcaption class="text-center small-caption">
+                                        Remote Transceiver Global Path Transmission Steps
+                                    </figcaption>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <!-- Cell Simulation and Automata Section -->
+<div class="row">
+    <div class="col">
+        <div class="Cellular">
+            <h1 id="cell-simulation-title"><strong>Cell Simulation and Automata</strong></h1>
+            <p>
+                Participated in a biomedical engineering bootcamp where I worked on a project simulating <strong>cellular interactions between various cell types</strong>, playing the role of a researcher at the School of Biomedical Engineering (SBME). 
+                My main objective was to <strong>help clinicians better understand complex cell interactions and aid in medical decisions</strong>.
+            </p>
+            <p class="text-start mt-4">The goal of this project is to:</p>
+            <ul>
+                <li>Help illustrate the need for object-oriented programming in a biomedical context</li>
+                <li>Implement various object-oriented programming paradigms</li>
+                <li>Understand the relevancy and methodology of translating clinical requirements into your project</li>
+            </ul>
+             <!-- Centered GIF -->
+            <div class="mt-4 text-center">
+                <img src="Images\Software Images\Animation.gif" class="cellular-img" alt="Cellular Simulation Gif">
+            </div>
+            <!-- Key Contributions -->
+            <div class="mt-5 key-contributions">
+                <h2 class="mb-3">Key contributions:</h2>
+                <div class="key-contributions-list border rounded p-3">
+                    <ul>
+                        <li>
+                            Designed and implemented a <strong>cellular automata simulation</strong> for cancer and human cells.<br>
+                            <p class="text-center"><strong>Skills/Tools:</strong> Java, IntelliJ IDEA, Object-Oriented Programming</p>
+                        </li>
+                        <li>
+                            Developed four types of cells with distinct behaviors: <strong>ImmuneCell, TissueCell, DeadCell, CancerCell</strong>.<br>
+                            <p class="text-center"><strong>Skills/Tools:</strong> Java, Class Design, System Modeling</p>
+                        </li>
+                        <li>
+                            Implemented neighborhood-based rules for each cell to interact with surrounding cells, mimicking real biological behavior.<br>
+                            <p class="text-center"><strong>Skills/Tools:</strong> Algorithm Design, Cellular Automata, Simulation</p>
+                        </li>
+                        <li>
+                            Visualized simulation results for demonstration and analysis of cell interactions.<br>
+                            <p class="text-center"><strong>Skills/Tools:</strong> Java Swing, Data Visualization</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cellular Automata Explanation -->
+            <div class="mt-5 key-contributions">
+                <h3 class="mb-3">Cellular Automata Explanation:</h3>
+                <p class="text-start">
+                    A cellular automaton is a system where objects interact based on a set of rules. Features include:
+                </p>
+                <ul>
+                    <li>Objects embedded in a 2D grid</li>
+                    <li>Each object has a state (e.g., 0/off or 1/on)</li>
+                    <li>Each object interacts with adjacent neighbors</li>
+                </ul>
+                <p class="mt-5 text-start">Neighborhood example for coordinates (x,y):</p>
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>(x-1,y-1)</th>
+                        <th>(x,y-1)</th>
+                        <th>(x+1,y-1)</th>
+                    </tr>
+                    <tr>
+                        <td>(x-1,y)</td>
+                        <td>(x,y)</td>
+                        <td>(x+1,y)</td>
+                    </tr>
+                    <tr>
+                        <td>(x-1,y+1)</td>
+                        <td>(x,y+1)</td>
+                        <td>(x+1,y+1)</td>
+                    </tr>
+                </table>
+                <p class="text-center">
+                    Inspired by <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank"><strong>Conway’s Game of Life</strong></a>, demonstrating complex behavior from simple rules.
+                </p>
+                <!-- Cellular Automata Explanation Continued -->
+                <div class="mt-5 cellular-details">
+                    <h3 class="cellular-heading text-start mb-5">The following cells are implemented:</h3>
+
+                    <!-- ImmuneCell -->
+                    <h4 class="cellular-subheading"><code>ImmuneCell</code></h4>
+                    <ul class="cellular-list">
+                        <li>Specialized in fighting <code>CancerCells</code></li>
+                        <li>Scans neighborhood for <code>CancerCells</code></li>
+                        <li>Targets and eliminates one <code>CancerCells</code> at a time</li>
+                        <li>Replaces eliminated <code>CancerCells</code> with <code>DeadCell</code></li>
+                    </ul>
+
+                    <!-- TissueCell -->
+                    <h4 class="cellular-subheading"><code>TissueCell</code></h4>
+                    <ul class="cellular-list">
+                        <li>Focuses on growth and regeneration</li>
+                        <li>Examines surrounding area for <code>DeadCells</code></li>
+                        <li>If a <code>DeadCell</code> exists, it will “grow” into a new <code>TissueCell</code> by replacing the <code>DeadCell</code> with a <code>TissueCell</code></li>
+                    </ul>
+
+                    <!-- DeadCell -->
+                    <h4 class="cellular-subheading"><code>DeadCell</code></h4>
+                    <ul class="cellular-list">
+                        <li>Passive cell type with no active functions</li>
+                        <li>Serves as placeholder in the simulation</li>
+                        <li>Exists only to be interacted with by other cell types</li>
+                        <li>Important for system balance</li>
+                    </ul>
+
+                    <!-- CancerCell -->
+                    <h4 class="cellular-subheading"><code>CancerCell</code></h4>
+                    <ul class="cellular-list">
+                        <li>Most sophisticated cell behavior in simulation</li>
+                        <li>Looks at its neighborhood and counts the number of dead, tissue, and immune cells around it, while also storing their location</li>
+                        <li>Then chooses one of 4 actions depending on its local environment:
+                            <ul class="cellular-sublist">
+                                <li>If there are any dead cells, the cancer will choose one and "grow" into it, replacing it with a new <code>CancerCell</code></li>
+                                <li>If the number of tissue cells is greater than the number of immune cells, it will choose one and kill it, replacing it with a <code>DeadCell</code></li>
+                                <li>If the number of immune cells is greater than the number of tissue cells, it will attack an immune cell, potentially killing it</li>
+                                <li>If the cancer cell is entirely surrounded by cancer cells then it will do nothing</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cellular-details mt-5">
+    <h2>Code Implementation</h2>
+
+    <!-- ImmuneCell -->
+    <p>
+        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#immuneCellCode" role="button" aria-expanded="false" aria-controls="immuneCellCode">
+            ImmuneCell Class
+        </a>
+    </p>
+    <div class="collapse" id="immuneCellCode">
+        <pre><code class="java">
+public class ImmuneCell extends Cell{
+
+    public ImmuneCell(int xInput, int yInput){
+        super(3, xInput, yInput, 4);
+    }
+
+    public ImmuneCell(Pair coord){
+        super(3, coord.getX(), coord.getY(), 4);
+    }
+
+    @Override
+    public void interactNeighbors(ArrayList&lt;Cell&gt; neighbors){
+        int count = 0;
+        double rand = 0;
+        ArrayList&lt;Integer&gt; cells = collectNeighbors();
+        int i = 0;
+        int min = 0;
+
+        for(int x: cells) {
+            if (x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 3) {
+                count++;
+            }
+        }
+
+        int max = count;
+        int[] arr = new int[count];
+
+        if(count &gt; 0) {
+            for (int x : cells) {
+                if (x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 3) {
+                    arr[i] = x;
+                    i++;
+                }
+            }
+            int random_int = (int)Math.floor(Math.random() * (max - min) + min);
+            Pair coordinates = Calculator.coordFromIndex(arr[random_int]);
+            neighbors.set(arr[random_int], new DeadCell(coordinates));
+        }
+    }
+}
+</code></pre>
+    </div>
+
+    <!-- TissueCell -->
+    <p>
+        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#tissueCellCode" role="button" aria-expanded="false" aria-controls="tissueCellCode">
+            TissueCell Class
+        </a>
+    </p>
+    <div class="collapse" id="tissueCellCode">
+        <pre><code class="java">
+public class TissueCell extends Cell{
+    public TissueCell(int xInput, int yInput){
+        super(0, xInput, yInput,1);
+    }
+
+    public TissueCell(Pair coord){
+        super(0, coord.getX(), coord.getY(), 1);
+    }
+
+    @Override
+    public void interactNeighbors(ArrayList&lt;Cell&gt; neighbors){
+        ArrayList&lt;Integer&gt; cells = collectNeighbors();
+
+        for (int x : cells) {
+            if (x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 0) {
+                if (Math.random() &lt; 0.7) {
+                    Pair coordinates = Calculator.coordFromIndex(x);
+                    neighbors.set(x, new TissueCell(coordinates));
+                    break;
+                }
+            }
+        }
+    }
+}
+</code></pre>
+    </div>
+
+    <!-- DeadCell -->
+    <p>
+        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#deadCellCode" role="button" aria-expanded="false" aria-controls="deadCellCode">
+            DeadCell Class
+        </a>
+    </p>
+    <div class="collapse" id="deadCellCode">
+        <pre><code class="java">
+public class DeadCell extends Cell{
+    public DeadCell(int xInput, int yInput){
+        super(0, xInput, yInput, 0);
+    }
+
+    public DeadCell(Pair coord){
+        super(0, coord.getX(), coord.getY(), 0);
+    }
+}
+</code></pre>
+    </div>
+
+    <!-- CancerCell -->
+    <p>
+        <a class="btn btn-dark w-100 text-start" data-bs-toggle="collapse" href="#cancerCellCode" role="button" aria-expanded="false" aria-controls="cancerCellCode">
+            CancerCell Class
+        </a>
+    </p>
+    <div class="collapse" id="cancerCellCode">
+        <pre><code class="java">
+public class CancerCell extends Cell{
+
+    public CancerCell(int xInput, int yInput){
+        super(1, xInput, yInput, 3);
+    }
+
+    public CancerCell(Pair coord){
+        super(1, coord.getX(), coord.getY(), 3);
+    }
+
+    @Override
+    public void interactNeighbors(ArrayList&lt;Cell&gt; neighbors){
+        ArrayList&lt;Integer&gt; cells = collectNeighbors();
+        int DeadNeighbor = 0;
+        int TissueNeighbor = 0;
+        int ImmuneNeighbor = 0;
+        int i = 0;
+        int min = 0;
+
+        for(int x: cells){
+            if(x &gt;= 0 &amp;&amp; x &lt; neighbors.size()) {
+                if (neighbors.get(x).getId() == 0) {
+                    DeadNeighbor++;
+                } else if (neighbors.get(x).getId() == 1) {
+                    TissueNeighbor++;
+                } else if (neighbors.get(x).getId() == 4) {
+                    ImmuneNeighbor++;
+                }
+            }
+        }
+
+        int[] arr1 = new int[TissueNeighbor];
+        for(int x: cells) {
+            if (x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 1) {
+                arr1[i] = x;
+                i++;
+            }
+        }
+        int max = TissueNeighbor;
+
+        int[] arr2 = new int[ImmuneNeighbor];
+        i = 0;
+        for(int x: cells) {
+            if (x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 4) {
+                arr2[i] = x;
+                i++;
+            }
+        }
+        int max2 = ImmuneNeighbor;
+
+        if(DeadNeighbor &gt; 0){
+            for(int x: cells){
+                if(x &gt;= 0 &amp;&amp; x &lt; neighbors.size() &amp;&amp; neighbors.get(x).getId() == 0){
+                    Pair coordinates = Calculator.coordFromIndex(x);
+                    neighbors.set(x, new CancerCell(coordinates));
+                    break;
+                }
+            }
+        } else if(TissueNeighbor &gt; ImmuneNeighbor &amp;&amp; TissueNeighbor &gt;= 1){
+            int random_int = (int)Math.floor(Math.random() * (max - min) + min);
+            Pair coordinates = Calculator.coordFromIndex(arr1[random_int]);
+            neighbors.set(arr1[random_int], new DeadCell(coordinates));
+        } else if(ImmuneNeighbor &gt; 0){
+            int random_int = (int)Math.floor(Math.random() * (max2 - min) + min);
+            int newStrength = neighbors.get(arr2[random_int]).getStrength() - 1;
+            neighbors.get(arr2[random_int]).setStrength(newStrength);
+            Pair coordinates = Calculator.coordFromIndex(arr2[random_int]);
+            neighbors.set(arr2[random_int], new DeadCell(coordinates));
+        }
+    }
+}
+</code></pre>
+    </div>
+                </div>
+                <div class="container mt-5">
+                            <h2 class="mb-3 text-center">Summary of Skills</h2>
+                                <div class="skills-marquee">
+                                    <div class="skills-track">
+                                    <img src="Images\Software Images\Skills Logos\a5397e6c551080d0c679d16ca22ce3eb.jpg" alt="C++" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7b2556503cbd9035d51831afd44bf888.jpg" alt="Python" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\509d08cc38dea759112858bc6d85a936.jpg" alt="Docker" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7ea67df8f3ea706fdc9b493725fa0835.jpg" alt="CSS" class="skill-logo">
+                                    <!-- repeat logos for smooth looping -->
+                                    <img src="Images\Software Images\Skills Logos\a5397e6c551080d0c679d16ca22ce3eb.jpg" alt="C++" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7b2556503cbd9035d51831afd44bf888.jpg" alt="Python" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\509d08cc38dea759112858bc6d85a936.jpg" alt="Docker" class="skill-logo">
+                                    <img src="Images\Software Images\Skills Logos\7ea67df8f3ea706fdc9b493725fa0835.jpg" alt="CSS" class="skill-logo">
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+            </section>
+            <footer class="site-footer text-center text-white">
+                <div class="container py-4">
+                    <p>&copy; 2025 Hassan ElGhayaty. All rights reserved.</p>
+                    <p>
+                        <a href="main.html" class="text-white">Home</a> |
+                        <a href="About.html" class="text-white">About</a> |
+                        <a href="Contact.html" class="text-white">Contact</a>
+                    </p>
+                </div>
+            </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
