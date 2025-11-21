@@ -7,6 +7,7 @@ const result = document.getElementById("result")
 const countdownBtn = document.getElementById("countdownBtn")
 const countdownResultInMonths = document.getElementById("countdownResultInMonths");
 const countdownResultInDays = document.getElementById("countdownResultInDays")
+const Age = document.getElementById("Age")
 
 const savDOB = (date) => {
     return new Promise((resolve, reject) => {
@@ -28,9 +29,9 @@ const displayRemainingTime = (date) => {
 
     // Determine next birthday
     let nextBirthdayYear = (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay <= birthDay)) 
-        ? currentYear 
+        ? currentYear
         : currentYear + 1;
-
+    let age = nextBirthdayYear - birthYear
     const nextBirthday = new Date(nextBirthdayYear, birthMonth - 1, birthDay);
 
     // Total difference in milliseconds
@@ -53,6 +54,7 @@ const displayRemainingTime = (date) => {
 
     countdownResultInMonths.innerHTML = `Next birthday is in <b>${monthsLeft}</b> months and <b>${daysLeft}</b> days! 🎉`;
     countdownResultInDays.innerHTML = `Or in total <b>${totalDays}</b> days`;
+    alert(`You will be ${age} years old!`)
 };
 
 
@@ -82,3 +84,38 @@ submitbtn.addEventListener('click', (event) => {
       })
 })
 
+async function getWeather() {
+    const apiKey = "281d14c40c2c4e7bb9250926251811";
+    const city = document.getElementById("cityInput").value.trim();
+    const weather = document.getElementById("weatherResult")
+
+    if (!city) {
+        weather.style.display = "block";
+        weather.innerHTML = `<p class="text-danger">Please enter a city name.</p>`;
+        return;
+    }
+
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+
+    try {
+        const response = await fetch(url);
+
+        if (!response.ok) throw new Error("City not found!");
+
+        const data = await response.json();
+
+        weather.style.display = "block";
+        weather.innerHTML = `<h5>${data.location.name}, ${data.location.country}</h5>
+            <br>
+            <p><strong>Temperature:</p>
+            <p></strong> ${data.current.temp_c} °C, ${data.current.temp_f} °F</p>
+            <p><strong>Condition:</strong> ${data.current.condition.text}</p>
+            <p><strong>Feels like: </strong> ${data.current.feelslike_c} °C, ${data.current.feelslike_f} °F</p>
+            <img src="https:${data.current.condition.icon}" alt="Weather icon" />`;
+    }
+    catch (error) {
+        weather.style.display = "block";
+        weather.innerHTML = `<p class="text-danger">Error: Could not get weather data.</p>`
+         console.error(error);
+    }
+}
