@@ -156,24 +156,37 @@
     perspective: 1000px;
     cursor: pointer;
 }
-.card-inner{
-    position: relative;
-    width: 100%;
-    padding-top: 100%; /* square */
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
+.card-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* keeps square ratio */
+  
+  /* 3D transform setup */
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; /* Chrome/Safari */
+  -ms-transform-style: preserve-3d;     /* Edge/IE */
+  
+  /* animation */
+  transition: transform 0.5s;
+  will-change: transform; /* helps Edge optimize rendering */
 }
 .memory-card .card-inner .card-front,
-.memory-card .card-inner .card-back{
-    position: absolute;
-    inset: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius: 8px;
-    backface-visibility: hidden;
-    font-size: 1.8rem;
+.memory-card .card-inner .card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  /* critical for flip animation */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Chrome/Safari */
+  -ms-backface-visibility: hidden;     /* Edge/IE */
+
+  font-size: 1.8rem;
 }
+
 .memory-card .card-inner .card-front{
     background: linear-gradient(180deg,#2b3038,#1f2630);
     color: #fff;
