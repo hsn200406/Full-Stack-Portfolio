@@ -1,3 +1,290 @@
+/* --- Fun Stuff Navigation Section Dark Theme --- */
+#funstuff-nav .card {
+    background: linear-gradient(120deg, #23272f 80%, #343a40 100%);
+    color: #f8fafc;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.18);
+}
+#funstuff-nav h2 {
+    color: #43e97b;
+    font-weight: 700;
+}
+#funstuff-nav .btn-gradient-blue,
+#funstuff-nav .btn-gradient-green,
+#funstuff-nav .btn-gradient-red {
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+#funstuff-nav .btn-gradient-blue {
+    background: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+}
+#funstuff-nav .btn-gradient-green {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+#funstuff-nav .btn-gradient-red {
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+}
+#funstuff-nav .btn-gradient-blue:hover,
+#funstuff-nav .btn-gradient-green:hover,
+#funstuff-nav .btn-gradient-red:hover {
+    filter: brightness(1.08) drop-shadow(0 2px 8px #43e97b22);
+    transform: scale(1.04);
+    transition: filter 0.2s, transform 0.2s;
+}
+/* --- Number Guessing Game Card and Elements --- */
+.guessing-game-card {
+    max-width: 480px;
+    width: 100%;
+    background: linear-gradient(120deg, #f4f6fb 70%, #e3eafc 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.guessing-game-title {
+    color: #1a2537;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.1rem;
+}
+
+.guessing-game-label {
+    color: #34495e;
+    font-weight: 600;
+}
+
+.guessing-game-select {
+    border: 0;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    background: #f8fafc;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.guessing-game-input {
+    border: 0;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    background: #f8fafc;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.guessing-game-btn {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+.guessing-game-message {
+    font-size: 1.1rem;
+}
+
+.guessing-game-tries {
+    color: #1a2537;
+    font-size: 1.1rem;
+}
+
+.guessing-game-history-title {
+    color: #1a2537;
+    font-weight: 600;
+}
+/* --- Number Guessing Game Interactive Section Hover Effects --- */
+.guessing-game-card .form-select:hover,
+.guessing-game-card .form-control:hover {
+    box-shadow: 0 0 0 2px #396afc33;
+    border-color: #396afc;
+    background: #f4f6fb;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.guessing-game-card .btn-gradient-green:hover,
+.guessing-game-card .btn-gradient-blue:hover,
+.guessing-game-card .btn-gradient-red:hover {
+    filter: brightness(1.08) drop-shadow(0 2px 8px #396afc22);
+    transform: scale(1.04);
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.guessing-game-card .btn-gradient-green:active,
+.guessing-game-card .btn-gradient-blue:active,
+.guessing-game-card .btn-gradient-red:active {
+    filter: brightness(0.98);
+    transform: scale(0.98);
+}
+/* --- Memory Matching Game Styles --- */
+.memory-game-card{
+    background: linear-gradient(120deg,#1f2630 60%, #23282f 100%);
+    color: #fff;
+    border-radius: 12px;
+}
+#memoryStartBtn {
+  background: linear-gradient(to right, #34d058, #28a745);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+#memoryStartBtn:hover {
+  background: linear-gradient(to right, #28a745, #218838);
+}
+
+#memoryStartBtn:active {
+  background: linear-gradient(to right, #1e7e34, #155724); /* darker green when pressed */
+  transform: scale(0.95); /* gives a "pressed down" effect */
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Larger screens → more columns, smaller cards */
+@media (min-width: 992px) {
+  .memory-grid {
+    grid-template-columns: repeat(5, 1fr); /* 6 columns on desktops */
+  }
+}
+
+/* Smaller screens → fewer columns, bigger cards for touch */
+@media (max-width: 600px) {
+  .memory-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on phones */
+  }
+}
+.memory-card{
+    perspective: 1000px;
+    cursor: pointer;
+}
+.card-inner{
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* square */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.memory-card .card-inner .card-front,
+.memory-card .card-inner .card-back{
+    position: absolute;
+    inset: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    font-size: 1.8rem;
+}
+.memory-card .card-inner .card-front{
+    background: linear-gradient(180deg,#2b3038,#1f2630);
+    color: #fff;
+}
+.memory-card .card-inner .card-back{
+    background: linear-gradient(180deg,#fff,#f1f3f7);
+    transform: rotateY(180deg);
+    color: #222;
+}
+
+.memory-card {
+  max-width: 300px;   /* cap the card width */
+  max-height: 200px;  /* cap the card height */
+}
+
+.card-inner {
+  width: 100%;
+  padding-top: 100%; /* still keeps square ratio */
+}
+.memory-card.flipped .card-inner{ transform: rotateY(180deg); }
+.memory-card.matched .card-inner{ box-shadow: 0 6px 18px rgba(67,160,71,0.12); }
+
+@media (max-width: 768px){
+    .memory-grid{ grid-template-columns: repeat(3,1fr); }
+}
+
+@media (max-width: 480px){
+    .memory-grid{ grid-template-columns: repeat(2,1fr); gap:8px; }
+}
+/* --- Weather Forecast Form Styles --- */
+.weather-card{
+    background: linear-gradient(120deg, #e3eafc 70%, #f4f6fb 100%);
+    border-radius: 16px;
+    border: none;
+}
+.weather-label{
+    color: #34495e;
+    font-weight: 600;
+}
+.weather-input{
+    border: 0;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    background: #f8fafc;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.weather-input:hover,
+.weather-input:focus{
+    box-shadow: 0 0 0 2px #396afc33;
+    border-color: #396afc;
+}
+.weather-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+.weather-card-item{
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(67,233,123,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.weather-card-item.weather-card-today{
+    background: linear-gradient(135deg, #396afc 0%, #2948ff 100%);
+    box-shadow: 0 4px 12px rgba(41,72,255,0.15);
+    border: 2px solid rgba(255,255,255,0.3);
+}
+.weather-card-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(67,233,123,0.25);
+}
+.weather-card-item.weather-card-today:hover{
+    box-shadow: 0 6px 16px rgba(41,72,255,0.25);
+}
+.weather-card-item h5{
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+.weather-icon{
+    width: 48px;
+    height: 48px;
+    margin: 8px auto;
+}
+.weather-condition{
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.weather-temps{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px 0;
+    font-size: 0.85rem;
+}
+.temp-high, .temp-low{
+    font-weight: 600;
+}
+.weather-details{
+    font-size: 0.8rem;
+    margin-top: 8px;
+    opacity: 0.95;
+}
+@media (max-width: 768px){
+    .weather-cards{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px){
+    .weather-cards{ grid-template-columns: 1fr; }
+}
 .title-section {
     text-align: center;
     justify-content: center;
