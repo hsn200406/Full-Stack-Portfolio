@@ -16,7 +16,7 @@ It is a fun way to showcase the skills I have developed through UBC engineering 
 There are currently 5 different sections/webpages in the website:
 
 - **Home**: Short introduction about myself and a link to the projects webpage, also accessible via the navbar.  
-- **Projects**: Two sections => Manufacturing Engineering and Software Development — each showing projects from those areas.  
+- **Projects**: Two sections => Manufacturing Engineering and Software Development, each showing projects from those areas.  
 - **About**: A little more about me outside work/studies, including hobbies and adventures.  
 - **Contact Me**: My information so you can reach out.  
 - **Fun Stuff**: A playful section where I incorporated JavaScript to create a few games.  
