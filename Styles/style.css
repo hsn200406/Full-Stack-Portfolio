@@ -184,15 +184,7 @@
     color: #222;
 }
 
-.memory-card {
-  max-width: 300px;   /* cap the card width */
-  max-height: 200px;  /* cap the card height */
-}
 
-.card-inner {
-  width: 100%;
-  padding-top: 100%; /* still keeps square ratio */
-}
 .memory-card.flipped .card-inner{ transform: rotateY(180deg); }
 .memory-card.matched .card-inner{ box-shadow: 0 6px 18px rgba(67,160,71,0.12); }
 
