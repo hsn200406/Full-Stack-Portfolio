@@ -12,40 +12,59 @@
     </head>
 
     <body class="text-bg-dark p-3">
+        <header class="title-section">
+            <div>
                 <br>
-        <div class="container-fluid p-0">
-            <header class="header-bg d-flex align-items-center justify-content-center">
-                <h1 class="text-white fw-bold">Software Projects</h1>
-            </header>
-        </div>
-        <nav class="navbar navbar-expand">
-                    <div class="container-fluid" style="background-color: #43472387;">
+                <div class="container-fluid p-0">
+                    <header class="header-bg d-flex align-items-center justify-content-center">
+                        <h1 class="text-white fw-bold">Software Development projects</h1>
+                    </header>
+                </div>
+                <nav class="navbar navbar-expand-sm" style="background-color: #43472387;">
+                    <div class="container-fluid">
+                        <!-- Brand (optional) -->
                         <!-- <a class="navbar-brand" href="#">Brand</a> -->
-                        <ul class="navbar-nav">
+
+                        <!-- Toggler button for small screens -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                             </li>
+
                             <!-- Dropdown for Projects -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="index.html#Projects" id="projectsMenu">Projects</a>
-                                <ul class="dropdown-menu" aria-labelledby="projectsMenu">
-                                <li><a class="dropdown-item active" aria-current="page" href="Soft_Projects.html">Software Projects</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="projectsMenu" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="projectsMenu">
+                                <li><a class="dropdown-item" href="Soft_Projects.html">Software Projects</a></li>
                                 <li><a class="dropdown-item" href="Manu_Projects.html">Manufacturing Engineering Projects</a></li>
-                                <!-- <li><a class="dropdown-item" href="#others">Other Projects</a></li> -->
-                                </ul>
+                            </ul>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="About.html">About</a>
+                            <a class="nav-link" href="Contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="FunStuff.html">Fun Stuff</a>
+                            <a class="nav-link" href="FunStuff.html">Fun Stuff</a>
                             </li>
                         </ul>
+                        </div>
                     </div>
                 </nav>
+            </div>
+        </header>
         <section id="software-projects" class="mt-5">
                 <br>
                 <div class="container">
